@@ -20,6 +20,8 @@ import java.net.UnknownHostException;
           System.out.println("Company A-IP Address:  " + IP.getHostAddress());
           
           NetworkInterface networkA = NetworkInterface.getByInetAddress(IP);
+          
+          byte[] macA = networkA.getHardwareAddress();
         
         
         
