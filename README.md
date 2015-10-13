@@ -12,15 +12,20 @@ import java.net.InetAddress;
         public static void main(String[] args){
         
         InetAddress IP;
-        testing {
+        try {
         
           IP = InetAddress.getLocalHost();
-          System.out.println("Company A, IP Address:  " + IP.getHostAddress());
+          System.out.println("Company A-IP Address:  " + IP.getHostAddress());
         
         
         
-        }
-        
-        
-}
+} catch (UnknownHostException e) {
+		
+		e.printStackTrace();
+		
+	} catch (SocketException e){
+			
+		e.printStackTrace();
+			
+	}
 
