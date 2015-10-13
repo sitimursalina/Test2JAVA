@@ -5,6 +5,7 @@
 package mac.compA;
 
 import java.net.InetAddress;
+import java.net.NetworkInterface;
 
 
     public class macadd{
@@ -16,6 +17,8 @@ import java.net.InetAddress;
         
           IP = InetAddress.getLocalHost();
           System.out.println("Company A-IP Address:  " + IP.getHostAddress());
+          
+          NetworkInterface networkA = NetworkInterface.getByInetAddress(IP);
         
         
         
