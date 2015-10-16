@@ -44,7 +44,14 @@ public class Threads
    }
    void myfunc() throws Throwable
    {
-   
+   for (int count = 1, row = 1; row < 20; row++, count++)
+	      {
+	      
+	      for (int t = 0; t < count; t++)
+	                System.out.print ('#');
+	           //to enter newline
+	           System.out.print ('\n');
+	   
     {
    
    
