@@ -29,9 +29,6 @@ public class Threads
           }
           
           System.out.println(sb.toString());
-		
-		
-		
 				
 		} catch (UnknownHostException e) {
 			
@@ -42,4 +39,8 @@ public class Threads
 			e.printStackTrace();
 				
 		}
+		
+		new Threads.myfunc();
+   }
+
 
