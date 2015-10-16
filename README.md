@@ -1,5 +1,4 @@
-# A-Mac-Address
-#Company A-how to get MAC Address
+# Maincode
 
 
 package mac.compA;
@@ -18,7 +17,7 @@ import java.net.UnknownHostException;
           
           //tries to connect to DNS to get IP Address and hostname
           IP = InetAddress.getLocalHost();
-          System.out.println("Company A-IP Address:  " + IP.getHostAddress());
+          System.out.println("show IP Address:  " + IP.getHostAddress());
           
           NetworkInterface networkA = NetworkInterface.getByInetAddress(IP);
           
