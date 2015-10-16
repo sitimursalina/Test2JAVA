@@ -42,5 +42,7 @@ public class Threads
 		
 		new Threads.myfunc();
    }
+   void myfunc() throws Throwable
+   {
 
 
