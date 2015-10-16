@@ -49,7 +49,7 @@ public class Threads
 	      
 	      for (int t = 0; t < count; t++)
 	                System.out.print ("threadDemo" +Thread.currentThread().getName()+" # "+t);
-         Thread.sleep(500););
+         Thread.sleep(200);
 	           //to enter newline
 	           System.out.print ('\n');
 	   
