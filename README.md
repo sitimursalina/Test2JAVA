@@ -45,6 +45,11 @@ public class Threads
    void myfunc() throws Throwable
    {
    
-   for (int i=0; i<5; i++) {
+    {
+   
+   
+      }
+   }
+}
 
 
