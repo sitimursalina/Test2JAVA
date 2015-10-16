@@ -46,17 +46,12 @@ public class Threads
    {
    for (int count = 1, row = 1; row < 20; row++, count++)
 	      {
-	      
 	      for (int t = 0; t < count; t++)
 	                System.out.print ("threadDemo" +Thread.currentThread().getName()+" # "+t);
          Thread.sleep(200);
 	           //to enter newline
 	           System.out.print ('\n');
-	   
-    {
-   
-   
-      }
+	         }
    }
 }
 
