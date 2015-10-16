@@ -13,13 +13,12 @@ public class Threads
 	   InetAddress IP;
 		try {
 		
-		  //tries to connect to DNS to get IP Address and hostname
+		  
           IP = InetAddress.getLocalHost();
           System.out.println("show IP Address:  " + IP.getHostAddress());
           
           NetworkInterface network = NetworkInterface.getByInetAddress(IP);
-          
-          //MAC Address
+        
           byte[] mac = network.getHardwareAddress();
           
           System.out.println("show MAC address : ");
