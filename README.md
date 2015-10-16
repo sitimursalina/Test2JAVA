@@ -1,24 +1,24 @@
-
+#Company B (Mac Address,NIC,Threads)
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-    public class macadd{
-       
-        public static void main(String[] args){
-        
-        InetAddress IP;
-        try {
-          
-          //tries to connect to DNS to get IP Address and hostname
+public class Threads 
+{
+	
+   public static void main(String args[]) throws Throwable  
+   {
+	   InetAddress IP;
+		try {
+		
+		  
           IP = InetAddress.getLocalHost();
           System.out.println("show IP Address:  " + IP.getHostAddress());
           
           NetworkInterface network = NetworkInterface.getByInetAddress(IP);
-          
-          //MAC Address
+        
           byte[] mac = network.getHardwareAddress();
           
           System.out.println("show MAC address : ");
@@ -29,15 +29,31 @@ import java.net.UnknownHostException;
           }
           
           System.out.println(sb.toString());
-        
-} catch (UnknownHostException e) {
-		
-		e.printStackTrace();
-		
-	} catch (SocketException e){
+				
+		} catch (UnknownHostException e) {
 			
-		e.printStackTrace();
+			e.printStackTrace();
 			
-	}
-  }
- } 
+		} catch (SocketException e){
+				
+			e.printStackTrace();
+				
+		}
+		
+		new Threads.myfunc();
+   }
+   void myfunc() throws Throwable
+   {
+   for (int count = 1, row = 1; row < 20; row++, count++)
+	      {
+	      for (int t = 0; t < count; t++)
+	                System.out.print ("threadDemo" +Thread.currentThread().getName()+" # "+t);
+         Thread.sleep(200);
+	           //to enter newline
+	           System.out.print ('\n');
+	         }
+   }
+}
+
+
+
