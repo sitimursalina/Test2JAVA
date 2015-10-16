@@ -19,19 +19,19 @@ import java.net.UnknownHostException;
           IP = InetAddress.getLocalHost();
           System.out.println("show IP Address:  " + IP.getHostAddress());
           
-          NetworkInterface networkA = NetworkInterface.getByInetAddress(IP);
+          NetworkInterface network = NetworkInterface.getByInetAddress(IP);
           
           //MAC Address
-          byte[] macA = networkA.getHardwareAddress();
+          byte[] mac = network.getHardwareAddress();
           
-          System.out.println("Company A - MAC address : ");
+          System.out.println("show MAC address : ");
           
-          StringBuilder sbA = new StringBuilder();
-		for (int a = 0; a < macA.length; a++) {
-			sbA.append(String.format("%02X%s", macA[a], (a < macA.length - 1) ? "-" : ""));		
+          StringBuilder sb = new StringBuilder();
+		for (int a = 0; a < mac.length; a++) {
+			sb.append(String.format("%02X%s", mac[a], (a < mac.length - 1) ? "-" : ""));		
           }
           
-          System.out.println(sbA.toString());
+          System.out.println(sb.toString());
         
 } catch (UnknownHostException e) {
 		
