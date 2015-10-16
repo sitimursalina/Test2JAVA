@@ -1,7 +1,4 @@
-# Maincode
 
-
-package mac.compA;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
